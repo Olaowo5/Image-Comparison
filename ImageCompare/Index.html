@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name ="author" content="Olamide Owo">
+ <meta name ="description" content="Imagie Compare">
+ <title>Image Comparison Slider | OWO</title>
+ <link rel="stylesheet" href="style.css">
+
+</head>
+    <body>
+        <h2>Image Comparision</h2>
+        <p>You can change the images below, jpeg, jpg and png accepted only</p>
+        <div class="inputfield">
+            <input type="file" id="image-input-Left" accept="image/jpeg, image/png, image/jpg">
+            <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
+           
+        </div>
+        <div class="wrapper">
+
+            <div class="images">
+                <div class="img-1"></div>
+                <div class="img-2"></div>
+            </div>
+            <div class="slider" oninput="slude()">
+                <div class="drag-line">
+                    <span></span>
+                </div>
+                <input type="range" min="0" max="100" value="50">
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
